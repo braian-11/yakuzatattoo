@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 
 }
@@ -7,6 +9,7 @@
 #f13223 rojiso
 #343434 gris oscuro
 #f1f0f0 gris claro
+#aa1818 bordo
 */
 
 body {
@@ -47,6 +50,10 @@ button {
     box-shadow: 2px 2px 10px #645c5c;
     color: white;
     background-color: #d13227;
+}
+
+.boton-quiero-revender {
+    margin-top: 20px;
 }
 
 button:hover {
@@ -128,54 +135,63 @@ header a:hover {
     padding: 200px 12px;
 }
 
-#destacados {
-    background-color: rgba(30, 31, 30);
-    color: rgb(170, 24, 24);
-    text-align: center;
+.tarjetitas{
+    background-color: #ffffff;
+    display: flex;
+    max-width: 100%;
+    padding: 60px;
+    gap: 1rem;
+    
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "exo fluxmax foreveryoung"
 }
 
-#destacados .container {
-    padding: 250px 23px;
+.tarjetita-imagen{
+    width:100%;
+    }
 
-
+.caja{
+    border-radius: 30px;
+    border: solid red;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
 }
 
-#destacados h2 {
-    margin-top: 0;
-    font-size: 2.5em;
+.informacion{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    width: 100%;
 }
 
-#destacadoss p {
-    display: none;
-
-}
-
-#destacados .carta {
-    background-position: center center;
-    background-size: cover;
-    padding: 50px 0px;
-    margin: 30px;
-    border-radius: 20px;
-}
-
-.carta:first-child {
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.007),
-            rgba(0, 0, 0, 0.007)), url(/media/EXOPEN.jpg);
-}
-
-.carta:nth-child(2) {
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.007),
-            rgba(0, 0, 0, 0.007)), url(/media/penf9.webp);
+.tarjetita-texto{
+    flex-wrap: 1;
 }
 
 
-.carta:nth-child(3) {
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.007),
-            rgba(0, 0, 0, 0.007)), url(/media/FLUXMAX.webp);
+.exo{
+    grid-area: exo;
 }
+
+.fluxmax{
+    grid-area: fluxmax;
+}
+
+.foreveryoung{
+    grid-area:foreveryoung;
+
+}
+
+
 
 #caracteristicas .container {
     text-align: center;
@@ -188,26 +204,205 @@ header a:hover {
     font-weight: bold;
 }
 
-footer {
-    background-color: rgb(230, 230, 230);
+.footer {
+    position: relative;
+    width: 100%;
+    background: #ffffff;
+    min-height: 100%;
+    padding: 20px 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-footer p {
-    margin: 0;
-    padding: 12px;
-    color: rgb(170, 24, 24);
-}
-
-footer .container {
-    height: 150px;
+.social-icon {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    position: relative;
+    margin: 10px 5px;
+    flex-wrap: wrap;
 }
 
-@media (min-width:700px){
+.icon-elem {
+    list-style: none;
 
-    header{
+}
+
+.icon {
+    color: #d13227;
+    font-size: 32px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: 0.5s;
+
+}
+
+.icon:hover {
+    transform: translateY(-10px);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+
+}
+
+.menu-elem {
+    list-style: none;
+}
+
+.menu-icon {
+    color: #aa1818;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: 0.75;
+    transition: 0.3s;
+
+
+}
+
+.menu-icon:hover {
+    opacity: 1;
+
+}
+
+.text {
+    color: #aa1818;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+
+}
+
+.formulario {
+    background-color: #aa1818;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+
+
+}
+
+.form {
+    background-color: #868282;
+    width: 90%;
+    margin: auto;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+
+}
+
+.form-container {
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+
+.form-titulo {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+.form-input {
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid #bbb7b7;
+}
+
+.form-input--message {
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: 1.5em;
+}
+
+.form-cta {
+    background-color: #d13227;
+    color: #ffffff;
+    border: none;
+    font-size: 0.7em;
+    font-weight: 300;
+    padding: 1.5em 0;
+    border-radius: .2em;
+    cursor: pointer;
+    font-weight: 500;
+
+
+}
+
+.ubicacion {
+    background-color: #aa1818;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.mapa-container {
+    background-color: #868282;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 700px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+
+}
+
+.mapa-titulo {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #ffffff;
+
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+p.mapa-text {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.mapa-google{
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+
+
+@media (max-width:450px) {
+    .form {
+        padding: 3.5em 1em;
+
+    }
+}
+
+
+@media (min-width:1700px) {
+
+    header {
         position: fixed;
         width: 100%;
     }
@@ -224,7 +419,7 @@ footer .container {
         padding-right: 20px;
     }
 
-    #hero h1{
+    #hero h1 {
         font-size: 5em;
     }
 
@@ -234,7 +429,8 @@ footer .container {
 
 
     }
-    #somos-yakuzatattoo .texto{
+
+    #somos-yakuzatattoo .texto {
         width: 50%;
         max-width: 600px;
         text-align: initial;
@@ -249,49 +445,48 @@ footer .container {
     #somos-yakuzatattoo .video-contenedor {
         background-image: linear-gradient(0deg,
                 rgba(0, 0, 0, 0.007),
-                rgba(0, 0, 0, 0.007)
-                ), url(/media/logo.jpeg);
-                background-color: cover;
-                background-position: center;
-                height: 600px;
-                width: 500px;
+                rgba(0, 0, 0, 0.007)), url(/media/logo.jpeg);
+        background-color: cover;
+        background-position: center;
+        height: 600px;
+        width: 500px;
 
     }
 
-    #somos-yakuzatattoo h2{
+    #somos-yakuzatattoo h2 {
         margin-top: 0px;
     }
 
-    #somos-yakuzatattoo .destacadoss{
+    #somos-yakuzatattoo .destacadoss {
         display: flex;
         justify-content: center;
-     }
+    }
 
-     #somos-yakuzatattoo .p{
+    #somos-yakuzatattoo .p {
         display: block;
         margin-bottom: 30px;
 
-     }
+    }
 
-     #somos-yakuzatattoo h3{
+    #somos-yakuzatattoo h3 {
         margin-top: 0;
-     }
+    }
 
-     #somos-yakuzatattoo .carta{
+    #somos-yakuzatattoo .carta {
         padding: 40px;
         background-size: 100% 100px;
         background-repeat: no-repeat;
         background-position: 0;
         background-color: #868282;
         box-shadow: #868282;
-    
-
-     }
 
 
+    }
 
 
 
 
 
- }
+
+
+}
