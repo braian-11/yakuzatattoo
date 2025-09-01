@@ -1,0 +1,60 @@
+.formulario {
+    background:linear-gradient(90deg,rgba(211, 3, 35, 1) 0%, rgba(133, 20, 20, 1) 37%, rgba(133, 20, 20, 1) 71%, rgba(211, 3, 35, 1) 100%);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+
+
+}
+
+.form {
+    background-color: #d30323;
+    width: 90%;
+    margin: auto;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+
+}
+
+.form-container {
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+
+.form-titulo {
+    color: #edfffa;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+.form-input {
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid #bbb7b7;
+}
+
+.form-input--message {
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: 1.5em;
+}
+
+.form-cta {
+    background-color: #ffc120;
+    color: #edfffa;
+    border: none;
+    font-size: 1em;
+    font-weight: 300;
+    padding: 1.5em 0;
+    border-radius: .2em;
+    cursor: pointer;
+    font-weight: 500;
+
+
+}

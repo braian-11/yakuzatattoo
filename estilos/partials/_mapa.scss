@@ -1,0 +1,46 @@
+.ubicacion {
+    background:linear-gradient(90deg,rgba(211, 3, 35, 1) 0%, rgba(133, 20, 20, 1) 37%, rgba(133, 20, 20, 1) 71%, rgba(211, 3, 35, 1) 100%);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.mapa-container {
+    background-color: #d30323;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 700px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+
+}
+
+.mapa-titulo {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #edfffa;
+
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+p.mapa-text {
+    color: #edfffa;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.mapa-google {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}

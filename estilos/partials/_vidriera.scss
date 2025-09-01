@@ -1,0 +1,35 @@
+.vidriera{
+    background:linear-gradient(90deg,rgba(211, 3, 35, 1) 0%, rgba(133, 20, 20, 1) 37%, rgba(133, 20, 20, 1) 71%, rgba(211, 3, 35, 1) 100%);
+}
+
+.titulovid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1vidriera{
+    color: #edfffa;
+    margin: 40px;
+
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.galeria-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-auto-rows: auto;
+    gap: 40px;
+}
+
+.galeria-container img {
+    height: 100%;
+
+}
