@@ -3,11 +3,12 @@ button {
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 10px;
-    border: 2px solid #bd4a4209;
-    box-shadow: 2px 2px 10px #645c5c;
-    color: white;
-    background-color: #d13227;
+    border: 2px solid rgba(189, 74, 66, 0.0352941176);
+    box-shadow: $box-shadow;
+    color: $text-color;
+    background-color: $primary-color;
 }
+
 
 .boton-quiero-revender {
     margin-top: 20px;

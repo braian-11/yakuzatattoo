@@ -4,12 +4,12 @@
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 90vh;
+    height: 100dvh;
     color: #edfffa;
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.007),
             rgba(0, 0, 0, 0.007)),
-        url(/media/imagenestudio.jpg);
+        url(../media/imagenestudio.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -17,6 +17,9 @@
 
 #hero h1 {
     color: #edfffa;
+    #hero h1 {
+  @include text-shadow(3px, 3px, 5px, rgba(255, 0, 0, 0.8)); // Usa el mixin con valores personalizados
+}
 }
 
 #hero button {

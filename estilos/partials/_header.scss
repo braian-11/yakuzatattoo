@@ -5,6 +5,7 @@
 
 header {
     background: linear-gradient(90deg,rgba(211, 3, 35, 1) 0%, rgba(133, 20, 20, 1) 37%, rgba(133, 20, 20, 1) 71%, rgba(211, 3, 35, 1) 100%);
+    
 }
 header .logo {
     margin: 0;
@@ -34,6 +35,6 @@ header a {
     color: #edfffa;
 }
 
-header :hover {
+header a:hover {
     color: #f11304ce;
 }

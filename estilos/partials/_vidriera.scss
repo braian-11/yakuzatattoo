@@ -1,18 +1,19 @@
-.vidriera{
-    background:linear-gradient(90deg,rgba(211, 3, 35, 1) 0%, rgba(133, 20, 20, 1) 37%, rgba(133, 20, 20, 1) 71%, rgba(211, 3, 35, 1) 100%);
+.vidriera {
+    background: linear-gradient(90deg, rgba(211, 3, 35, 1) 0%, rgba(133, 20, 20, 1) 37%, rgba(133, 20, 20, 1) 71%, rgba(211, 3, 35, 1) 100%);
 }
 
-.titulovid{
+.titulovid {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.h1vidriera{
+.h1vidriera {
     color: #edfffa;
     margin: 40px;
 
 }
+
 img {
     width: 100%;
     object-fit: cover;
@@ -20,6 +21,7 @@ img {
 
 .galeria-container {
     width: 90%;
+    height: auto;
     max-width: 1100px;
     margin: auto;
 
@@ -30,6 +32,9 @@ img {
 }
 
 .galeria-container img {
-    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
 
 }

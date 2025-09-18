@@ -1,0 +1,5 @@
+/* partials/_mixins.scss */
+
+@mixin text-shadow($horizontal: 2px, $vertical: 2px, $blur: 4px, $color: rgba(0, 0, 0, 0.5)) {
+  text-shadow: $horizontal $vertical $blur $color;
+}
